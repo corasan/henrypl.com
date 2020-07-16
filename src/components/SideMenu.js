@@ -1,17 +1,18 @@
 // @flow
-import React from 'react'
+import * as React from 'react'
 import UserIcon from './UserIcon'
 import ComputerIcon from './ComputerIcon'
 
-type Props = {
+type TabProps = {
   activePage: number,
+  children: React.Element<any>,
+  tab: number,
 }
-
-const Tab = ({ children, activePage, tab }) => {
+const Tab = ({ children, activePage, tab }: TabProps) => {
   const isActive = activePage === tab
   const color = isActive ? '#56dcee' : '#fff'
   const style = {
-    borderRightColor: '#56dcee', 
+    borderRightColor: '#56dcee',
     borderRightWidth: isActive ? 2 : 0,
   }
 
@@ -22,16 +23,16 @@ const Tab = ({ children, activePage, tab }) => {
   )
 }
 
-export default ({ activePage }: Props): React$Node => {
-  console.log('activePage', activePage)
-  return (
-    <div className="col side-menu">
-      <Tab activePage={activePage} tab={0}>
-        <ComputerIcon />
-      </Tab>
-      <Tab activePage={activePage} tab={1}>
-        <UserIcon />
-      </Tab>
-    </div>
-  )
+type Props = {
+  activePage: number
 }
+export default ({ activePage }: Props): React.Node => (
+  <div className="col side-menu">
+    <Tab activePage={activePage} tab={0}>
+      <ComputerIcon />
+    </Tab>
+    <Tab activePage={activePage} tab={1}>
+      <UserIcon />
+    </Tab>
+  </div>
+)
