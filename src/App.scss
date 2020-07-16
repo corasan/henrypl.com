@@ -38,7 +38,7 @@
 
   .sub-text {
     color: #b8b5b5;
-    font-weight: 200;
+    font-weight: 300;
   }
 }
 
@@ -58,25 +58,26 @@
   display: flex;
   background-color: #262a33;
   height: 100%;
-  width: 7%;
+  width: 70px;
   position: fixed;
   left: 0;
   top: 0;
   border-right-width: 0.1px;
-  border-right-color: #36363a98;
+  border-right-color: #36363a6c;
   border-right-style: solid;
   z-index: 100;
-
   align-items: center;
   justify-content: center;
 }
 
 .tab {
-  width: 99%;
+  width: 100%;
   padding-top: 6px;
   padding-bottom: 2px;
   justify-content: center;
   align-items: center;
   border-right-style: solid;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.scss';
 import ReactPageScroller from 'react-page-scroller'
-import Profile from './slides/Profile'
+import Home from './slides/Home'
 import SideMenu from './components/SideMenu';
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
     <div className="App">
       <SideMenu activePage={page} />
       <ReactPageScroller pageOnChange={handlePageChange} customPageNumber={page}>
-        <Profile />
+        <Home />
         <div className="col slide">
 
         </div>
