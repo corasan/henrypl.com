@@ -1,19 +1,22 @@
 import React, { useState } from 'react';
-import logo from './logo.svg';
 import './App.scss';
 import ReactPageScroller from 'react-page-scroller'
 import Profile from './slides/Profile'
+import SideMenu from './components/SideMenu';
 
 function App() {
   const [page, setPage] = useState(0)
+
   const handlePageChange = currentPage => {
     setPage(currentPage)
   }
+
   return (
     <div className="App">
+      <SideMenu activePage={page} />
       <ReactPageScroller pageOnChange={handlePageChange} customPageNumber={page}>
         <Profile />
-        <div className="slide">
+        <div className="col slide">
 
         </div>
       </ReactPageScroller>
