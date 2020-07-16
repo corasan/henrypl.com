@@ -1,6 +1,6 @@
-import React from 'react';
-import Lottie from 'lottie-react-web';
-import profileAnimation from '../assets/profile_animation.json';
+import React from 'react'
+import Lottie from 'lottie-react-web'
+import profileAnimation from '../assets/profile_animation.json'
 
 export default () => (
   <div className="row slide">
@@ -15,4 +15,4 @@ export default () => (
     </div>
     <Lottie options={{ animationData: profileAnimation }} height="55%" width="55%" />
   </div>
-);
+)

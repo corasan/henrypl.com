@@ -27,6 +27,7 @@ module.exports = {
     'react/jsx-filename-extension': 0,
     'import/no-named-as-default-member': 0,
     'import/no-named-as-default': 0,
-    semi: 0,
+    semi: ['error', 'never'],
+    'no-extra-semi': 0,
   },
-};
+}
