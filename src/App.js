@@ -1,14 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import ReactPageScroller from 'react-page-scroller'
+import Profile from './slides/Profile'
 
 function App() {
+  const [page, setPage] = useState(0)
+  const handlePageChange = currentPage => {
+    setPage(currentPage)
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Coming soon</p>
-      </header>
+      <ReactPageScroller pageOnChange={handlePageChange} customPageNumber={page}>
+        <Profile />
+        <div className="slide">
+
+        </div>
+      </ReactPageScroller>
     </div>
   );
 }
