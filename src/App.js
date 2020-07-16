@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.scss';
 import ReactPageScroller from 'react-page-scroller';
-import Home from './slides/Home';
+import Home from './views/Home';
 import SideMenu from './components/SideMenu';
 
 function App() {
