@@ -26,9 +26,7 @@
   flex: 1;
   height: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
+  // flex-direction: column;
   color: #fff;
   text-align: left;
   padding-left: 40px;
@@ -43,4 +41,16 @@
     color: #b8b5b5;
     font-weight: 200;
   }
+}
+
+.col {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.row {
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
 }
