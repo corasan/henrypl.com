@@ -33,25 +33,10 @@
   padding-left: 12%;
   padding-right: 40px;
 
-  h1 {
-    font-size: 50px;
-    font-weight: 900;
-  }
-
   .sub-text {
     color: #b8b5b5;
     font-weight: 300;
   }
-}
-
-.col {
-  align-items: flex-start;
-  // justify-content: center;
-}
-
-.row {
-  // align-items: center;
-  justify-content: flex-start;
 }
 
 .side-menu {
@@ -76,7 +61,7 @@
   background-color: #2c303a;
 }
 
-.profile {
+.aboutme {
   p {
     font-size: 17px;
   }

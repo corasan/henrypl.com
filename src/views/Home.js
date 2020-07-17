@@ -3,7 +3,7 @@ import Lottie from 'lottie-react-web'
 import profileAnimation from '../assets/profile_animation.json'
 
 export default () => (
-  <div className="row slide">
+  <div className="row slide home">
     <div className="col">
       <h1>
         I&apos;m Henry,
