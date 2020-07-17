@@ -15,8 +15,9 @@ const Tab = ({
   const isActive = activePage === tab
   const color = isActive ? '#56dcee' : '#fff'
   const style = {
-    borderRightColor: '#56dcee',
+    borderColor: '#56dcee',
     borderRightWidth: isActive ? 2 : 0,
+    borderTopWidth: isActive ? 2 : 0,
   }
 
   return (

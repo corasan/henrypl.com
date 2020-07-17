@@ -9,6 +9,6 @@ export default () => (
         I&apos;m very passionate about implementing beautiful and seamless UIs on Web and Mobile.
       </p>
     </div>
-    <img src={animoji} alt="Henry's animaji" style={{ height: 420, width: 420 }} />
+    <img src={animoji} alt="Henry's animaji" />
   </div>
 )

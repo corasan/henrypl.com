@@ -1,3 +1,5 @@
+@import 'mobile';
+
 .App {
   text-align: center;
 }
@@ -43,31 +45,23 @@
 }
 
 .col {
-  flex-direction: column;
   align-items: flex-start;
-  justify-content: center;
+  // justify-content: center;
 }
 
 .row {
-  flex-direction: row;
-  align-items: center;
+  // align-items: center;
   justify-content: flex-start;
 }
 
 .side-menu {
   display: flex;
   background-color: #262a33;
-  height: 100%;
-  width: 70px;
   position: fixed;
-  left: 0;
-  top: 0;
   border-right-width: 0.1px;
   border-right-color: #36363a6c;
   border-right-style: solid;
   z-index: 100;
-  align-items: center;
-  justify-content: center;
 }
 
 .tab {
@@ -76,7 +70,6 @@
   padding-bottom: 6px;
   justify-content: center;
   align-items: center;
-  border-right-style: solid;
 }
 
 .tab:hover {
@@ -86,14 +79,6 @@
 .profile {
   p {
     font-size: 17px;
-  }
-
-  img {
-    padding-left: 100px;
-  }
-
-  .left-col {
-    width: 40%;
   }
 }
 

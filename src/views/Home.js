@@ -13,6 +13,6 @@ export default () => (
       </h1>
       <p className="sub-text">Front End Developer / Mobile Developer / SwiftUI enthusiast</p>
     </div>
-    <Lottie options={{ animationData: profileAnimation }} height="55%" width="55%" />
+    <Lottie options={{ animationData: profileAnimation }} />
   </div>
 )
