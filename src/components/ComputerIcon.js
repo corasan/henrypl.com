@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 type Props = {
   color: string
@@ -14,4 +14,4 @@ export default ({ color }: Props) => (
       fill={color}
     />
   </svg>
-);
+)
