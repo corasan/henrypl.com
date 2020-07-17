@@ -6,7 +6,10 @@ export default () => (
   <div className="row slide home">
     <div className="col">
       <h1>
-        I&apos;m Henry,
+        I&apos;m
+        {' '}
+        <span id="name">Henry</span>
+        ,
         {' '}
         <br />
         React Native Developer
