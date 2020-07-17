@@ -5,8 +5,8 @@ type Props = {
 }
 
 export default ({ color }: Props) => (
-  <svg width="32" height="32" viewBox="0 0 26 26">
-    <rect width="32" height="32" fill="none" rx="0" ry="0" />
+  <svg width="36" height="36" viewBox="0 0 26 26">
+    <rect width="36" height="36" fill="none" rx="0" ry="0" />
     <path
       fillRule="evenodd"
       clipRule="evenodd"

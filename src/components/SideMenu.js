@@ -7,8 +7,11 @@ type TabProps = {
   activePage: number,
   children: React.Element<any>,
   tab: number,
+  onClick: (tab: number) => void,
 }
-const Tab = ({ children, activePage, tab }: TabProps) => {
+const Tab = ({
+  children, activePage, tab, onClick,
+}: TabProps) => {
   const isActive = activePage === tab
   const color = isActive ? '#56dcee' : '#fff'
   const style = {
@@ -17,21 +20,30 @@ const Tab = ({ children, activePage, tab }: TabProps) => {
   }
 
   return (
-    <div style={style} className="tab">
+    <div
+      style={style}
+      className="tab"
+      onClick={() => onClick(tab)}
+      onKeyDown={() => onClick(tab)}
+      role="button"
+      tabIndex={tab}
+      name={`Tab ${tab}`}
+    >
       {React.cloneElement(children, { color })}
     </div>
   )
 }
 
 type Props = {
-  activePage: number
+  activePage: number,
+  onTabClick: () => void,
 }
-export default ({ activePage }: Props): React.Node => (
+export default ({ activePage, onTabClick }: Props): React.Node => (
   <div className="col side-menu">
-    <Tab activePage={activePage} tab={0}>
+    <Tab activePage={activePage} tab={0} onClick={onTabClick}>
       <ComputerIcon />
     </Tab>
-    <Tab activePage={activePage} tab={1}>
+    <Tab activePage={activePage} tab={1} onClick={onTabClick}>
       <UserIcon />
     </Tab>
   </div>

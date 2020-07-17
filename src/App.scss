@@ -72,12 +72,32 @@
 
 .tab {
   width: 100%;
-  padding-top: 6px;
-  padding-bottom: 2px;
+  padding-top: 14px;
+  padding-bottom: 6px;
   justify-content: center;
   align-items: center;
   border-right-style: solid;
-  margin-top: 10px;
-  margin-bottom: 10px;
+}
+
+.tab:hover {
+  background-color: #2c303a;
+}
+
+.profile {
+  p {
+    font-size: 17px;
+  }
+
+  img {
+    padding-left: 100px;
+  }
+
+  .left-col {
+    width: 40%;
+  }
+}
+
+:focus {
+  outline: none;
 }
 

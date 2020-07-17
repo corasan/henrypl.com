@@ -1,8 +1,8 @@
-import React from 'react';
+import React from 'react'
 
 export default ({ color }: { color: string}) => (
-  <svg width="34" height="34" viewBox="0 0 26 26">
-    <rect width="34" height="34" fill="none" rx="0" ry="0" />
+  <svg width="36" height="36" viewBox="0 0 26 26">
+    <rect width="36" height="36" fill="none" rx="0" ry="0" />
     <path
       fillRule="evenodd"
       clipRule="evenodd"
