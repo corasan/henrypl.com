@@ -6,10 +6,26 @@ import { ReactComponent as Twitter } from '../assets/twitter.svg'
 
 const Icons: React.FC<React.SVGProps<SVGSVGElement>> = (props: React.SVGProps<SVGSVGElement>) => {
   const iconList = [
-    <Mail key="mail" />,
-    <LinkedIn key="linkedin" />,
-    <Twitter key="twitter" />,
-    <Github key="github" />,
+    {
+      component: <Mail />,
+      key: 'mail',
+      link: '',
+    },
+    {
+      component: <LinkedIn />,
+      key: 'linkedin',
+      link: 'https://linkedin.com/in/henrypl95',
+    },
+    {
+      component: <Twitter />,
+      key: 'twitter',
+      link: 'https://twitter.com/henrypl_dev',
+    },
+    {
+      component: <Github />,
+      key: 'github',
+      link: 'https://github.com/corasan',
+    },
   ]
   const defaultProps = {
     height: 38,
@@ -20,15 +36,18 @@ const Icons: React.FC<React.SVGProps<SVGSVGElement>> = (props: React.SVGProps<SV
   return (
     <>
       {iconList.map((el) => (
-        <div
-          className="flex justify-center py-5 w-full cursor-pointer hover:bg-accent"
+        <a
+          href={el.link}
           key={el.key}
+          target="_blank"
+          rel="noreferrer"
+          className="flex justify-center py-5 w-full cursor-pointer hover:bg-accent"
         >
-          {React.cloneElement(el, {
+          {React.cloneElement(el.component, {
             ...defaultProps,
             ...props,
           })}
-        </div>
+        </a>
       ))}
     </>
   )

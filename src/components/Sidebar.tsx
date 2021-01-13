@@ -1,5 +1,9 @@
-import React from 'react'
+import Icons from './Icons'
 
-const Sidebar = () => <div className="flex w-24 bg-gray-900 min-h-screen fixed right-0"></div>
+const Sidebar = () => (
+  <div className="flex flex-col w-24 justify-end items-center bg-gray-900 min-h-screen fixed right-0">
+    <Icons />
+  </div>
+)
 
 export default Sidebar
