@@ -10,6 +10,7 @@ module.exports = {
       emerald: colors.emerald,
       accent: '#00E8B6',
       gray: colors.gray,
+      white: colors.white,
     },
   },
   variants: {
