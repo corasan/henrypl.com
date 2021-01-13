@@ -1,9 +1,10 @@
 {
   "tabWidth": 2,
   "useTabs": false,
-  "jsxSingleQuote": true,
+  "jsxSingleQuote": false,
   "bracketSpacing": true,
   "htmlWhitespaceSensitivity": "css",
   "printWidth": 100,
-  "semi": false
+  "semi": false,
+  "singleQuote": true
 }

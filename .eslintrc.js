@@ -4,10 +4,7 @@ module.exports = {
     es6: true,
   },
   parser: 'babel-eslint',
-  extends: [
-    'plugin:react/recommended',
-    'airbnb',
-  ],
+  extends: ['plugin:react/recommended'],
   globals: {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
@@ -19,15 +16,13 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: 'module',
   },
-  plugins: [
-    'react',
-    'flowtype',
-  ],
+  plugins: ['react', 'flowtype'],
   rules: {
     'react/jsx-filename-extension': 0,
     'import/no-named-as-default-member': 0,
     'import/no-named-as-default': 0,
     semi: ['error', 'never'],
     'no-extra-semi': 0,
+    'react/react-in-jsx-scope': 0,
   },
 }
