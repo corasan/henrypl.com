@@ -9,6 +9,7 @@ module.exports = {
       black: colors.black,
       emerald: colors.emerald,
       accent: '#00E8B6',
+      gray: colors.gray,
     },
   },
   variants: {

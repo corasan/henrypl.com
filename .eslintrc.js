@@ -23,5 +23,6 @@ module.exports = {
     'import/no-named-as-default': 0,
     semi: ['error', 'never'],
     'no-extra-semi': 0,
+    'react/react-in-jsx-scope': 0,
   },
 }
