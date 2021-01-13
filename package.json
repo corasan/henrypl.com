@@ -3,13 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "flow-bin": "^0.129.0",
+    "flow-bin": "^0.142.0",
     "lottie-react-web": "^2.2.2",
-    "node-sass": "^4.14.1",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-page-scroller": "^2.0.7-beta",
-    "react-scripts": "3.4.1"
+    "node-sass": "^5.0.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-page-scroller": "^2.0.11-beta",
+    "react-scripts": "4.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -34,11 +34,11 @@
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
-    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-airbnb": "^18.2.1",
     "eslint-plugin-flowtype": "^5.2.0",
-    "eslint-plugin-import": "^2.22.0",
-    "eslint-plugin-jsx-a11y": "^6.3.1",
-    "eslint-plugin-react": "^7.20.3",
-    "eslint-plugin-react-hooks": "^4.0.8"
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0"
   }
 }
