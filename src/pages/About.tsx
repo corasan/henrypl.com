@@ -5,7 +5,7 @@ const About = () => (
 
     <p className="text-2xl mt-8">
       I am a Front-End Developer and React Native Developer. From time to time I like play around in
-      the Back-End using Node.js and a little Ruby on Rails.
+      the Back-End using Node.js or Ruby on Rails.
     </p>
 
     <div>
