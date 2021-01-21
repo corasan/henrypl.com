@@ -9,7 +9,7 @@ import Sidebar from './components/Sidebar'
 function App() {
   return (
     <Router>
-      <div className="flex min-h-screen justify-center items-center px-24">
+      <div className="flex min-h-screen justify-center items-center px-12 sm:px-24">
         <Switch>
           <Route path="/">
             <About />
