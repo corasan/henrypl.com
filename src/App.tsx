@@ -1,7 +1,6 @@
 import React from 'react'
-import logo from './logo.svg'
 import './App.css'
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import About from './pages/About'
 import Projects from './pages/Projects'
 import Sidebar from './components/Sidebar'
@@ -9,10 +8,13 @@ import Sidebar from './components/Sidebar'
 function App() {
   return (
     <Router>
-      <div className="flex min-h-screen justify-center items-center px-12 sm:px-24">
+      <div className="flex flex-col min-h-screen justify-center items-center px-12 py-20 sm:px-24">
         <Switch>
-          <Route path="/">
+          <Route exact path="/">
             <About />
+          </Route>
+          <Route path="/projects">
+            <Projects />
           </Route>
         </Switch>
         <Sidebar />
