@@ -3,7 +3,7 @@ module.exports = {
     browser: true,
     es6: true,
   },
-  parser: 'babel-eslint',
+  parser: '@typescript-eslint/parser',
   extends: ['plugin:react/recommended'],
   globals: {
     Atomics: 'readonly',
@@ -24,5 +24,6 @@ module.exports = {
     semi: ['error', 'never'],
     'no-extra-semi': 0,
     'react/react-in-jsx-scope': 0,
+    'comma-dangle': 'off',
   },
 }
