@@ -15,7 +15,7 @@ const Icons: React.FC<React.SVGProps<SVGSVGElement>> = (props: React.SVGProps<SV
     {
       component: <Mail />,
       key: 'mail',
-      link: null,
+      link: 'mailto: contact@henrypl.com',
     },
     {
       component: <LinkedIn />,
