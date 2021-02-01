@@ -8,7 +8,7 @@ import Sidebar from './components/Sidebar'
 function App() {
   return (
     <Router>
-      <div className="flex flex-col min-h-screen justify-center items-center px-12 py-20 sm:px-24">
+      <div className="flex flex-col min-h-screen justify-center items-center px-10 pt-12 sm:px-24 sm:pt-24">
         <Switch>
           <Route exact path="/">
             <About />

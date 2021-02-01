@@ -18,7 +18,7 @@ const About = () => {
             <div className="inline-block border-b-2 border-accent pb-1 mt-8">
               <Link
                 to="/projects"
-                className="text-2xl text-accent font-extrabold inline cursor-pointer"
+                className="text-xl sm:text-2xl text-accent font-extrabold inline cursor-pointer"
               >
                 My projects
               </Link>
