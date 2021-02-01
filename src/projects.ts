@@ -14,7 +14,7 @@ export default {
         },
       ],
       image: `${process.env.PUBLIC_URL}/assets/stocket.png`,
-      tags: ['SwiftUI'],
+      tags: ['React Native', 'IEX Cloud', 'iOS', 'Ruby', 'GraphQL', 'Firebase'],
     },
     {
       name: 'E-Commerce App',
@@ -26,11 +26,11 @@ export default {
         },
       ],
       image: `${process.env.PUBLIC_URL}/assets/ecommerce.png`,
-      tags: ['SwiftUI'],
+      tags: ['SwiftUI', 'iOS'],
     },
     {
       name: 'CloudMate',
-      description: 'Stock Market simulator built with React Native and IEX Cloud API.',
+      description: 'Simple open-source weather app built with React Native and the Open Weather Map API.',
       urls: [
         {
           title: 'Github',
@@ -42,7 +42,7 @@ export default {
         },
       ],
       image: `${process.env.PUBLIC_URL}/assets/cloudmate.png`,
-      tags: ['SwiftUI'],
+      tags: ['React Native', 'iOS', 'Open Weather Map'],
     },
   ],
 }

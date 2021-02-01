@@ -2,13 +2,14 @@ import React from 'react'
 import CardContainer from '../components/CardContainer'
 import data from '../projects'
 import ElevatedButton from '../components/ElevatedButton'
-import { ReactComponent as ArrowLeft } from '../assets/arrow-left.svg'
+import Tag from '../components/Tag'
 
 export interface Project {
   name: string
   image: string
   description: string
   urls: Array<ProjectUrl>
+  tags: Array<string>
 }
 
 export interface ProjectUrl {
@@ -28,12 +29,19 @@ const Projects: React.FC = () => (
                 src={el.image}
                 className="max-w-3xl max-h-48 sm:max-w-5xl sm:max-h-60 rounded-2xl border-black border-2"
               />
-              <div className="pl-10">
-                <p className="text-xl font-black sm:text-4xl">{el.name}</p>
-                <p className="text-base sm:text-lg pt-5">{el.description}</p>
+              <div className="flex pl-10 flex-col justify-between">
+                <div className="pb-10">
+                  <p className="text-xl font-black sm:text-4xl">{el.name}</p>
+                  <p className="text-base sm:text-lg pt-5">{el.description}</p>
+                </div>
+                <div className="flex flex-row flex-wrap">
+                  {el.tags.map((tag, i) => (
+                    <Tag title={tag} key={`${el.name}_tag-${tag}-${i}`} />
+                  ))}
+                </div>
               </div>
             </div>
-            <div className="flex flex-col sm:flex-row pt-5 sm:pl-40">
+            <div className="flex flex-col sm:flex-row pt-8 sm:pl-40">
               {el.urls.map(({ url, title }, subIndex) => (
                 <ElevatedButton url={url} title={title} key={subIndex} />
               ))}

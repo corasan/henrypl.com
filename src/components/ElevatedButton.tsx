@@ -2,7 +2,7 @@ import React from 'react'
 import { ProjectUrl } from '../pages/Projects'
 
 const ElevatedButton: React.FC<ProjectUrl> = ({ title, url }: ProjectUrl) => (
-  <div className="bg-black mb-2 mx-2">
+  <div className="bg-black mb-2 sm:mb-0 mr-2">
     <a
       href={url}
       className="flex justify-center pt-2 pb-2 pl-7 pr-7 bg-accent transition duration-500 ease-in-out transform hover:translate-x-1 hover:-translate-y-1"
