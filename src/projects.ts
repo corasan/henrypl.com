@@ -17,7 +17,7 @@ export default {
       tags: ['React Native', 'IEX Cloud', 'iOS', 'Ruby', 'GraphQL', 'Firebase'],
     },
     {
-      name: 'E-Commerce App',
+      name: 'E-Commerce',
       description: 'E-commerce simple app to learn SwiftUI.',
       urls: [
         {
@@ -30,7 +30,8 @@ export default {
     },
     {
       name: 'CloudMate',
-      description: 'Simple open-source weather app built with React Native and the Open Weather Map API.',
+      description:
+        'Simple open-source weather app built with React Native and the Open Weather Map API.',
       urls: [
         {
           title: 'Github',
