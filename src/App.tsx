@@ -1,25 +1,37 @@
 import React from 'react'
 import './App.css'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { Switch, Route, useHistory, useRouteMatch } from 'react-router-dom'
 import About from './pages/About'
 import Projects from './pages/Projects'
 import Sidebar from './components/Sidebar'
+import { ReactComponent as ArrowLeft } from './assets/arrow-left.svg'
 
 function App() {
+  const history = useHistory()
+  const homeMatch = useRouteMatch('/')
+
   return (
-    <Router>
-      <div className="flex flex-col min-h-screen justify-center items-center px-10 pt-12 sm:px-24 sm:pt-24">
-        <Switch>
-          <Route exact path="/">
-            <About />
-          </Route>
-          <Route path="/projects">
-            <Projects />
-          </Route>
-        </Switch>
-        <Sidebar />
-      </div>
-    </Router>
+    <div className="flex flex-col min-h-screen justify-center items-center px-10 pt-4 pb-2 sm:px-24 sm:pt-6 sm:pb-18">
+      {!homeMatch?.isExact && (
+        <div
+          className="flex flex-row w-full justify-start py-8 cursor-pointer"
+          onClick={history.goBack}
+        >
+          <ArrowLeft className="stroke-current text-accent" />
+          <span className="pl-2 text-accent font-bold">Home</span>
+        </div>
+      )}
+
+      <Switch>
+        <Route exact path="/">
+          <About />
+        </Route>
+        <Route path="/projects">
+          <Projects />
+        </Route>
+      </Switch>
+      <Sidebar />
+    </div>
   )
 }
 
