@@ -11,7 +11,7 @@ function App() {
   const homeMatch = useRouteMatch('/')
 
   return (
-    <div className="flex flex-col min-h-screen justify-center items-center px-10 pt-4 pb-2 sm:px-24 sm:pt-6 sm:pb-18">
+    <div className="flex flex-col min-h-screen justify-center items-center px-10 pt-4 pb-4 sm:px-24 sm:pt-6 sm:pb-14">
       {!homeMatch?.isExact && (
         <div
           className="flex flex-row w-full justify-start py-8 cursor-pointer"

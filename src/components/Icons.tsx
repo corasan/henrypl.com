@@ -47,7 +47,7 @@ const Icons: React.FC<React.SVGProps<SVGSVGElement>> = (props: React.SVGProps<SV
           key={el.key}
           target={el.link ?? undefined}
           rel="noreferrer"
-          className="flex justify-center py-5 w-full cursor-pointer hover:bg-accent"
+          className="flex justify-center py-5 px-5 w-full cursor-pointer hover:bg-accent"
           {...(el.key === 'download-resume' && {
             download: el.link,
           })}
