@@ -13,12 +13,11 @@ function App() {
   return (
     <div className="flex flex-col min-h-screen justify-center items-center px-10 pt-4 pb-4 sm:px-24 sm:pt-6 sm:pb-14">
       {!homeMatch?.isExact && (
-        <div
-          className="flex flex-row w-full justify-start py-8 cursor-pointer"
-          onClick={history.goBack}
-        >
-          <ArrowLeft className="stroke-current text-accent" />
-          <span className="pl-2 text-accent font-bold">Home</span>
+        <div className="flex flex-row w-full justify-start py-8">
+          <div className="cursor-pointer" onClick={history.goBack}>
+            <ArrowLeft className="stroke-current text-accent inline-block" />
+            <span className="pl-2 text-accent font-bold inline-block">Home</span>
+          </div>
         </div>
       )}
 
