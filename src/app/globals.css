@@ -73,3 +73,11 @@ hr {
   cursor: pointer;
 }
 
+@media (max-width: 600px) {
+  body {
+    width: 85vw;
+  }
+  h1 {
+    font-size: 8vw;
+  }
+}
