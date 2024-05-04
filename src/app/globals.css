@@ -76,6 +76,7 @@ hr {
 @media (max-width: 600px) {
   body {
     width: 85vw;
+    padding-top: 6vh;
   }
   h1 {
     font-size: 8vw;
