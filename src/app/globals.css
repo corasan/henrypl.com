@@ -3,9 +3,6 @@
 @tailwind utilities;
 
 :root {
-    --foreground-rgb: 44, 44, 44;
-    --foreground-hidden: #adada4;
-    --foreground-muted: #ccb8a8;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -13,7 +10,9 @@
     flex: 1;
     height: 100vh;
     width: 100vw;
-    background-color: #dddcd7;
+    color-scheme: light dark;
+    background-color: light-dark(#dddcd7, #222222);
+    color: light-dark(#444444, #8d8d7b);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-synthesis: none;
@@ -21,7 +20,7 @@
 }
 
 body {
-    color: rgb(var(--foreground-rgb));
+    /* color: rgb(var(--foreground-rgb)); */
     padding-top: 18vh;
     display: flex;
     flex: 1;
@@ -33,7 +32,7 @@ body {
 h1:before {
     content: "#";
     padding-right: 0.5rem;
-    color: var(--foreground-hidden);
+    color: light-dark(#adada4, #3f3f38);
     font-family: var(--font-departure-mono);
 }
 
@@ -43,14 +42,15 @@ h1 {
 
 a {
     text-decoration: underline;
-    text-decoration-color: var(--foreground-hidden);
+    text-decoration-color: light-dark(#444444, #8d8d7b);
     text-decoration-thickness: 2px;
     text-underline-offset: 4px;
     padding-right: 0.2rem;
 }
 
 a:hover {
-    text-decoration-color: var(--foreground-muted);
+    text-decoration-color: light-dark(#848474, #cdcdbb);
+    color: light-dark(#848474, #cdcdbb);
 }
 
 ul {
@@ -85,18 +85,4 @@ hr {
     h1 {
         font-size: 8vw;
     }
-}
-
-.content-container {
-    border-width: 1px;
-    border-color: var(--foreground-hidden);
-    border-style: solid;
-    padding: 4rem;
-    border-radius: 0.5rem;
-}
-
-.selected-background {
-    background-color: #444444;
-    align-self: flex-start;
-    color: #dddcd7;
 }
